@@ -13,3 +13,7 @@ Route::get('/comments/create', 'CommentController@showCreateForm')->name('commen
 
 // コメント投稿実行
 Route::post('/comments/create', 'CommentController@create');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -44,6 +44,7 @@ class CommentController extends Controller
      */
     public function create(Request $request)
     {
+
         $comment = new Comment();
         $comment->body = $request->body;
 
